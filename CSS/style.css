@@ -128,7 +128,7 @@
     .hero {
       min-height: 75vh;
       background: linear-gradient(rgba(47, 43, 38, 0.35), rgba(47, 43, 38, 0.35)),
-        url("/img/Foto\ vooraanzicht.jpg") center/cover;
+        url("img/Foto\ vooraanzicht.jpg") center/cover;
       color: #fff;
       display: flex;
       align-items: center;
