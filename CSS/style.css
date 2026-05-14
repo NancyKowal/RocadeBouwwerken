@@ -1,0 +1,351 @@
+
+    /* ==============================
+       BASISINSTELLINGEN
+       ============================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style:normal;
+    color: #2f2b26;
+    background-color: #f7f2ea;
+    line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .label {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #9b7b4f;
+      margin-bottom: 10px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      margin-bottom: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #2f2b26;
+      color: #fff;
+      padding: 14px 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.85rem;
+      margin-top: 10px;
+    }
+
+    .button.light {
+      background-color: #fff;
+      color: #2f2b26;
+    }
+
+    /* ==============================
+       HEADER
+       ============================== */
+    .site-header {
+      background-color: #f7f2ea;
+      border-bottom: 1px solid #ddd1c2;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      color: #9b7b4f;
+      letter-spacing: 2px;
+      font-weight:500;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+
+    /* ==============================
+       HERO
+       ============================== */
+    .hero {
+      min-height: 75vh;
+      background: linear-gradient(rgba(47, 43, 38, 0.35), rgba(47, 43, 38, 0.35)),
+        url("/img/Foto\ vooraanzicht.jpg") center/cover;
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero .label {
+      color: #f1dfc6;
+    }
+
+    /* ==============================
+       TWEE KOLOMMEN
+       ============================== */
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .image-card img {
+      border-radius: 4px;
+    }
+
+    /* ==============================
+       PROJECTBLOK
+       ============================== */
+    .project {
+      background-color: #e8dccb;
+    }
+
+    .project-box {
+      background-color: #fff;
+      padding: 40px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ==============================
+       GALERIJ
+       ============================== */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .gallery-grid img {
+      height: 180px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    /* ==============================
+       CTA BROCHURE
+       ============================== */
+    .cta {
+      background-color: #2f2b26;
+      color: #fff;
+      text-align: center;
+    }
+
+    .cta .container {
+      max-width: 750px;
+    }
+
+    /* ==============================
+       VOORDELEN
+       ============================== */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 35px;
+    }
+
+    .feature-card {
+      background-color: #fff;
+      padding: 28px;
+      min-height: 190px;
+      border-top: 4px solid #9b7b4f;
+    }
+
+    /* ==============================
+       KLANTVERHALEN
+       ============================== */
+    .testimonials {
+      background-color: #fff;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .testimonial {
+      background-color: #f7f2ea;
+      padding: 30px;
+      border-radius: 4px;
+    }
+
+    .person {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    /* ==============================
+       NIEUWS
+       ============================== */
+    .news-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .news-card {
+      background-color: #fff;
+      padding: 24px;
+    }
+
+    .date {
+      color: #9b7b4f;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    /* ==============================
+       CONTACT
+       ============================== */
+    .contact {
+      background-color: #e8dccb;
+    }
+
+    form {
+      display: grid;
+      gap: 16px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #c9bca8;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    textarea {
+      min-height: 140px;
+    }
+
+    /* ==============================
+       FOOTER
+       ============================== */
+    .footer {
+      background-color: #2f2b26;
+      color: #fff;
+      padding: 50px 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 30px;
+    }
+
+    .footer p {
+      color: #d8cbbb;
+    }
+
+    /* ==============================
+       RESPONSIVE VOOR GSM/TABLET
+       ============================== */
+    @media (max-width: 800px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .nav {
+        flex-direction: column;
+        padding: 20px 0;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .two-columns,
+      .features-grid,
+      .testimonial-grid,
+      .news-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 55px 0;
+      }
+    }
