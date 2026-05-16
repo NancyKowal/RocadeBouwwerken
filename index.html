@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
       "></script>
-    <script type="text/javascript" src="validation.js" defer></script>
-    <title>Rocade Invest Oefening</title>
+    <title>RocadeBouwwerken</title>
 </head>
 
 <body>
+  <script src="script.js"></script>
   <!-- HEADER / NAVIGATIE -->
+ 
   <header class="site-header">
-    <div class="container nav">
+    <div class="nav">
       <a href="#" class="logo">ROCADE INVEST</a>
-
       <ul class="nav-links">
         <li><a href="#over">Over ons</a></li>
         <li><a href="#project">Project</a></li>
@@ -33,22 +32,23 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container hero-content">
-      <p class="label">Vastgoed met karakter</p>
-      <h1>Met inzicht ontwikkeld, voor jou gebouwd</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae
-        nibh rustig wonen, doordacht ontwerp en duurzame materialen.
-      </p>
+      <h1 class="heading-primary">
+        <span class="heading-primary-sub">Thuiskomen in rust, Verbonden met alles</span>
+        <span class="heading-primary-main">Exclusief wonen <br> aan de Rupel</span>
+      </h1>
       <a href="#project" class="button light">Ontdek het project</a>
     </div>
+   
   </section>
 
   <!-- OVER ONS -->
   <section class="section" id="over">
     <div class="container two-columns">
       <div>
-        <p class="label">Over ons</p>
-        <h2>Ontwikkeling van residentieel vastgoed</h2>
+        <h2 class="heading-secondary">
+        <span class="heading-secundary-sub">Over ons</span>
+        <span class="heading-secundary-main">Ontwikkeling van residentieel vastgoed</span>
+         </h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
           commodo, lorem in facilisis elementum, mi massa luctus justo, sed
@@ -69,14 +69,16 @@
 
   <!-- PROJECT -->
   <section class="section project" id="project">
-    <div class="container two-columns">
+    <div class="container two-columns-two">
       <div class="image-card">
         <img src="img/Rupelsky appt vieuw.avif" alt="Placeholder project" width="350" />
       </div>
 
       <div class="project-box">
-        <p class="label">Nieuw project</p>
-        <h2>Boutique living in jouw buurt</h2>
+        <h2 class="heading-secundary">
+        <span class="heading-secundary-sub">Nieuw project</span>
+        <span class="heading-secundary-main">Boutique living in jouw buurt</span>
+      </h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel
           massa vel justo porttitor tincidunt. Vivamus euismod, tortor in
@@ -93,8 +95,10 @@
   <!-- GALERIJ -->
   <section class="section">
     <div class="container">
-      <p class="label">Fotogalerij</p>
-      <h2>Laat je inspireren</h2>
+      <h2 class="heading-secundary">
+        <span class="heading-secundary-sub">Fotogalerij</span>
+        <span class="heading-secundary-main">Laat je insprireren</span>
+      </h2>
 
       <div class="gallery-grid">
         <img src="https://placehold.co/400x300/e5d8c7/2f2b26?text=Foto+1" alt="Galerij foto 1" />
@@ -105,11 +109,13 @@
     </div>
   </section>
 
-  <!-- BROCHURE CTA -->
+  <!-- BROCHURE CTA 
   <section class="section cta">
     <div class="container">
-      <p class="label">Download</p>
-      <h2>Ontdek alle mogelijkheden in onze brochure</h2>
+      <h2 class="heading-secundary">
+        <span class="heading-secundary-sub">Download</span>
+        <span class="heading-secundary-main">Ontdek alle mogelijkheden in onze brochure</span>
+      </h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vul later je
         echte tekst en downloadlink in.
@@ -121,18 +127,20 @@
   <!-- VOORDELEN -->
   <section class="section">
     <div class="container">
-      <p class="label">Waarom kiezen voor ons?</p>
-      <h2>Woonprojecten met aandacht voor detail</h2>
+      <h2 class="heading-secundary">
+        <span class="heading-secundary-sub">Waarom kiezen voor ons?</span>
+        <span class="heading-secundary-main">Woonprojecten met aandacht voor detail</span>
+      </h2>
 
       <div class="features-grid">
         <article class="feature-card">
           <h3>Unieke architectuur</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Geen massa-productie, maar karaktervolle projecten met doordachte details.</p>
         </article>
 
         <article class="feature-card">
           <h3>Kwaliteit boven kwantiteit</h3>
-          <p>Praesent commodo mi massa, met aandacht voor afwerking.</p>
+          <p>Zorgvuldig gekozen materialen, verfijnde afwerking en een intieme, exclusieve woonbeleving.</p>
         </article>
 
         <article class="feature-card">
@@ -161,9 +169,10 @@
   <!-- KLANTVERHALEN -->
  <section class="section testimonials">
     <div class="container">
-      <p class="label">Klantverhalen</p>
-      <h2>Wat vertellen bewoners?</h2>
-
+      <h2 class="heading-secundary">
+        <span class="heading-secundary-sub">Klantenverhalen</span>
+        <span class="heading-secundary-main">Wat vertellen bewoners</span>
+      </h2>
       <div class="testimonial-grid">
         <article class="testimonial">
           <p>
@@ -187,8 +196,10 @@
   <!-- NIEUWS -->
   <section class="section" id="nieuws">
     <div class="container">
-      <p class="label">Nieuws & weetjes</p>
-      <h2>Laatste inzichten</h2>
+      <h2 class="heading-secundary">
+        <span class="heading-secundary-sub">Nieuws & weetjes</span>
+        <span class="heading-secundary-main">Laatste inzichten</span>
+      </h2>
 
       <div class="news-grid">
         <article class="news-card">
@@ -210,8 +221,10 @@
   <section class="section contact" id="contact">
     <div class="container two-columns">
       <div>
-        <p class="label">Contact</p>
-        <h2>Heb je interesse?</h2>
+        <h2 class="heading-secundary">
+          <span class="heading-secundary-sub">Contact</span>
+          <span class="heading-secundary-main">Heb je interesse</span>
+        </h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laat je
           gegevens achter en wij nemen contact met je op.
@@ -228,7 +241,7 @@
         <input required type="email" name="email" placeholder="E-mail" id="email-input"/>
         <input type="tel" name="tel" placeholder="Telefoon" id="tel-input" />
         <textarea name="text" placeholder="Bericht" id="text-input"></textarea>
-        <button type="submit" class="button">Verstuur</button>
+        <button type="submit" class="button btn">Verstuur</button>
       </form>
     </div>
   </section>
@@ -258,3 +271,4 @@
   </footer>
 </body>
 </html>
+  
