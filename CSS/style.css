@@ -6,6 +6,7 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      
     }
 
     body {
@@ -128,8 +129,8 @@
    .hero {
   min-height: 75vh;
   background:
-    linear-gradient(rgba(47, 43, 38, 0.35), rgba(47, 43, 38, 0.35)),
-    url("img/Foto vooraanzicht.jpg") center/cover;
+  linear-gradient(rgba(47, 43, 38, 0.35), rgba(47, 43, 38, 0.35)),
+  url("/img/Foto vooraanzicht.jpg vooraanzicht.jpg") center/cover;
   color: #fff;
   display: flex;
   align-items: center;
