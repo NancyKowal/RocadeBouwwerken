@@ -1,0 +1,509 @@
+/* kleuren canva : #232532 donker - #deaa69 goud */
+    /* ==============================
+       BASISINSTELLINGEN
+       ============================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    body {
+    font-family:"Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style:normal;
+    color: #333;
+    background-color: #f7f2ea;
+    line-height: 1.6;
+    padding: 30px;
+    }
+    
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .container .nav {
+      width: 100vw;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    /*Primary heading*/
+  .heading-primary{
+    position: relative;
+  }
+
+    .heading-primary-sub {
+      text-transform: uppercase;
+      letter-spacing: 4.8px;
+      font-size: 1rem;
+      font-weight:300;
+      color: #f5efe9;
+      margin-bottom: 10px;
+      display: block;
+
+      animation-name: MoveInLeft;
+      animation-duration: 3s;
+      animation-timing-function: ease-out;
+    }
+
+     @keyframes MoveInLeft{
+      0% {
+        opacity: 0;
+        transform: translateX(-100px);
+
+      }
+
+      80%{
+        transform: translateX(10px);
+
+
+      }
+
+      100%{
+        opacity: 1;
+        transform: translateX(0);
+
+
+      }
+
+    }
+
+    .heading-primary-main {
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #f5efe92;
+      display: block;
+
+      /*animation-name: MoveInRight;
+      animation-duration: 3s;*/
+
+      animation: MoveInRight 3s ease-out
+
+    }
+
+    @keyframes MoveInRight {
+      0% {
+        opacity: 0;
+        transform: translateX(100px);
+      }
+
+       80%{
+        transform: translateX(-10px);
+
+      }
+
+      100%{
+        opacity: 1;
+        transform: translateX(0);
+
+      }
+
+    }
+
+    /*Secundary heading*/
+
+    .heading-secundary-sub {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #9b7b4f;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .heading-secundary-main {
+      display: block;
+    }
+
+
+
+    h1,
+    h2,
+    h3 {
+      
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+
+    p {
+      margin-bottom: 18px;
+    }
+
+    /*Buttons*/
+    .button:link,
+    .button:visited {
+      display: inline-block;
+      background-color: #2f2b26;
+      color: #f5efe9;
+      padding: 14px 24px;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-top: 10px;
+      border-radius:5px;
+      transition: all .2s;
+    }
+
+    .button:hover{
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px;
+
+
+    }
+
+    .button:active {
+      transform: translateY(-1px);
+    }
+
+    .button.light {
+      background-color: #f5efe9;
+      color: #2f2b26;
+    }
+
+    .button.btn{
+      padding: 13px;
+      border: none;
+      background-color: #2f2b26;
+      font-size: 1.2rem;
+      color: #f5efe9;
+      text-transform: uppercase;
+    }
+
+
+    /* ==============================
+       HEADER
+       ============================== */
+    .total-header {
+      
+    }
+
+    .site-header {
+      background-color: #f7f2ea;
+      border-bottom: 1px solid #ddd1c2;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      width: 92vw;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+      gap: 40px;
+   
+      
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      color: #9b7b4f;
+      letter-spacing: 2px;
+      font-weight:500;
+      padding-left:30px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      font-size: 1.1rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      gap: 20px;
+
+      transition: all .2s;
+    }
+
+    
+
+    
+    
+
+    /* ==============================
+       HERO
+       ============================== */
+    
+    .hero {
+      position: relative;
+      min-height: 75vh;
+      background: linear-gradient(rgba(47, 43, 38, 0.35), rgba(47, 43, 38, 0.35)),url("/img/Foto vooraanzicht.jpg") center/cover;
+      color: #f5efe9;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content{
+      position:absolute;
+      top: 45%;
+      left:50%;
+      transform: translate(-50%,-45%);
+      text-align: center;
+      
+      
+    }
+    
+
+
+
+    /* ==============================
+       TWEE KOLOMMEN
+       ============================== */
+    .two-columns {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .two-columns-two {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 100px;
+      align-items: center;
+      padding: 20px;
+
+    }
+
+    .image-card img {
+      border-radius: 4px;
+      
+    }
+
+    /* ==============================
+       PROJECTBLOK
+       ============================== */
+    .project {
+      background-color: #e8dccb;
+    }
+
+    .project-box {
+      background-color: #f7f2ea;
+      padding: 40px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ==============================
+       GALERIJ
+       ============================== */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .gallery-grid img {
+      height: 180px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    /* ==============================
+       CTA BROCHURE
+       ============================== */
+    .cta {
+      background-color: #2f2b26;
+      color: #f7f2ea;
+      text-align: center;
+    }
+
+    .cta .container {
+      max-width: 750px;
+    }
+
+    /* ==============================
+       VOORDELEN
+       ============================== */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 35px;
+    }
+
+    .feature-card {
+      background-color: #fff;
+      padding: 28px;
+      min-height: 190px;
+      border: 6px solid #9b7b4f4b ;
+      -webkit-box-shadow: -5px 5px 18px -2px #9B7B4F; 
+      box-shadow: -5px 5px 18px -2px #9B7B4F;
+      
+      
+    }
+
+    /* ==============================
+       KLANTVERHALEN
+       ============================== */
+    .testimonials {
+      background-color: #e8dccb;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .testimonial {
+      background-color: #f7f2ea;
+      padding: 30px;
+      border-radius: 4px;
+      
+    }
+
+    .person {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    /* ==============================
+       NIEUWS
+       ============================== */
+    .news-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .news-card {
+      background-color: #fff;
+      padding: 24px;
+    }
+
+    .date {
+      color: #9b7b4f;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    /* ==============================
+       CONTACT
+       ============================== */
+    .contact {
+      background-color: #e8dccb;
+     
+    }
+
+    form {
+      display: grid;
+      gap: 16px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #c9bca8;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    textarea {
+      min-height: 140px;
+    }
+
+   
+
+    /* ==============================
+       FOOTER
+       ============================== */
+    .footer {
+      background-color: #2f2b26;
+      color: #fff;
+      padding: 50px 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 30px;
+    }
+
+    .footer p {
+      color: #d8cbbb;
+    }
+
+    /* ==============================
+       RESPONSIVE VOOR GSM/TABLET
+       ============================== */
+    @media (max-width: 800px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .nav {
+        flex-direction: column;
+        padding: 20px 0;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .two-columns,
+      .features-grid,
+      .testimonial-grid,
+      .news-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 55px 0;
+      }
+    }
