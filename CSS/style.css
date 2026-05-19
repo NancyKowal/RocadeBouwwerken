@@ -229,11 +229,7 @@
     }
 
     .logo {
-      font-size: 1.5rem;
-      color: #9b7b4f;
-      letter-spacing: 2px;
-      font-weight:500;
-      padding-left:30px;
+      align-items: start;
     }
 
     .nav-links {
